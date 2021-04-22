@@ -1,0 +1,156 @@
+*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: consolas;
+	}
+	.card-body
+	{
+        width: 100%;
+		height: 100%;
+		background: #111;
+	}
+	.card-container
+	{
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 40px 0;
+		flex-wrap: wrap;
+        overflow: hidden;
+	}
+	.card-container .card-box
+	{
+		position: relative;
+		width: 320px;
+		height: 400px;
+		color: #fff;
+		background: #111;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 15px 30px;
+		transition: 0.5s;
+        overflow: hidden;
+	}
+	.card-container .card-box:hover
+	{
+		transform: translateY(-20px);
+	}
+	.card-container .card-box::before
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 500px;
+		background: linear-gradient(45deg, #2daa7a, #4c1566);
+	}
+	.card-container .card-box::after
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 500px;
+		background: linear-gradient(45deg, #2daa7a, #4c1566);
+		filter: blur(30px);
+	}
+    .card-container .card-box:nth-child(2)::before,
+	.card-container .card-box:nth-child(2)::after
+	{
+		background: linear-gradient(45deg, #03a9f4, #960000);
+	}
+    .card-container .card-box:nth-child(3)::before,
+	.card-container .card-box:nth-child(3)::after
+	{
+		background: linear-gradient(45deg, #9003d1, #068102);
+	}
+    .card-container .card-box:nth-child(4)::before,
+	.card-container .card-box:nth-child(4)::after
+	{
+		background: linear-gradient(45deg, #000742, #006ace);
+	}
+    .card-container .card-box:nth-child(5)::before,
+	.card-container .card-box:nth-child(5)::after
+	{
+		background: linear-gradient(45deg, #000f92, #ad0000);
+	}
+    .card-container .card-box:nth-child(6)::before,
+	.card-container .card-box:nth-child(6)::after
+	{
+		background: linear-gradient(45deg, #8b3901, #01460a);
+	}
+	.card-container .card-box:nth-child(7)::before,
+	.card-container .card-box:nth-child(7)::after
+	{
+		background: linear-gradient(45deg, #ffbc00, #ff0058);
+	}
+	.card-container .card-box:nth-child(8)::before,
+	.card-container .card-box:nth-child(8)::after
+	{
+		background: linear-gradient(45deg, #9d12c7, #aaa123);
+	}
+
+	/*SI vous avez 2 carte, voici le code*/
+/*	.card-container .card-box:nth-child(2)::before,
+	.card-container .card-box:nth-child(2)::after
+	{
+		background: linear-gradient(45deg, #03a9f4, #ff0058);
+	}	*/
+
+	.card-container .card-box span
+	{
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		right: 6px;
+		bottom: 6px;
+		background: rgba(0,0,0,0.6);
+		z-index: 2;
+	}
+	.card-container .card-box span::before
+	{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		height: 100%;
+		background: rgba(255,255,255,0.1);
+		pointer-events: none;
+	}
+	.card-container .card-box .card-content
+	{
+		position: relative;
+		z-index: 10;
+		padding: 20px 40px;
+	}
+	.card-container .card-box .card-content h2
+	{
+		font-size: 2em;
+		color: #fff;
+		margin-bottom: 10px;
+	}
+	.card-container .card-box .card-content p
+	{
+		font-size: 1.1em;
+		color: #fff;
+		margin-bottom: 10px;
+		line-height: 1.4em;
+	}
+	.card-container .card-box .card-content a
+	{
+		display: inline-block;
+        width: 156px;
+		font-size: 1.1em;
+		color: #111;
+		background: #fff;
+		padding: 10px;
+		text-decoration: none;
+		font-weight: 700;
+	}

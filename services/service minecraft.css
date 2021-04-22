@@ -1,0 +1,240 @@
+.server
+{
+    background-color: #e6e6e6;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+span.server{
+    color: red;
+}
+
+.etape
+{
+    color: #006a9b;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.desc{
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+}
+
+.version{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto; 
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    align-items: center;
+    border: #006a9b 3px solid;
+    border-radius: 12px;
+    margin-top: 15px;
+    width: 600px;
+    background-color: #c2c2c2;
+    height: 80px;
+    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: visible;
+    -moz-users-elect: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.vertype{
+    height: 60px;
+    background-color: white;
+    border: 4px groove rgb(0, 16, 151);
+    width: 200px;
+    border-radius: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.vertype:hover{
+    transition: 0.7s;
+    background-color: black;
+    color: white;
+}
+.vername:hover{
+    color: white;
+}
+
+.vername{
+    /* line-height: 60px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    color: black;
+    text-decoration: none;
+}
+
+.version::-webkit-scrollbar {
+    height: 0px;
+}
+
+/* Version Minecraft Global */
+
+.retour{
+    height: 50px;
+    width: 150px;
+    margin-left: 30px;
+    background-color: black;
+    text-align: center;
+    line-height: 50px;
+    -moz-users-elect: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.retour a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-weight: 800;
+    text-decoration: none;
+    font-size: 18px;
+}
+.retour:hover, .retour a:hover{
+    transition: 0.7s;
+    color: red;
+}
+
+.liste{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    margin-top: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: rgb(20, 20, 20);
+    border-radius: 30px;
+    border: 4px groove rgb(0, 146, 146);
+    -moz-users-elect: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.vanilla
+{
+    background: linear-gradient(to bottom, rgb(173, 88, 38), rgb(1, 49, 88));
+}
+.snapshot
+{
+    background: linear-gradient(to bottom, rgb(121, 0, 121), rgb(177, 80, 1));
+}
+.paper
+{
+    background: linear-gradient(to bottom, rgb(70, 70, 185), rgb(49, 126, 49));
+}
+.spigot{
+    background: linear-gradient(to bottom, rgb(175, 149, 0), rgb(0, 121, 190));
+}
+
+.vanilla, .snapshot, .paper, .spigot, .mohist, .magma, .catserver, .bungee
+{
+    margin: 15px;
+    padding: 15px;
+    width: auto;
+    height: auto;
+    min-width: 250px;
+    background-color: rgb(167, 167, 167);
+    font-weight: 800;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.ligne
+{
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+.lastver
+{
+    font-size: 12px;
+    color: rgb(0, 197, 0);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+.abandonned{
+    font-size: 12px;
+    color: rgb(150, 0, 0);
+    word-spacing: 2px;
+    letter-spacing: 1px;
+}
+
+.download
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    height: 40px;
+    width: 150px;
+    line-height: 40px;
+    background: #0b8b07;
+}
+.download a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+}
+.download:hover, .download a:hover{
+    transition: 0.7s;
+    background-color: #075804;
+}
+
+/* Vanilla.html */
+
+.vanilla h2, .snapshot h2, .paper h2, .spigot h2{
+    margin-bottom: 10px;
+    color: red;
+}
+.vernumber{
+    font-size: 18px;
+}
+
+/* Modded.html */
+
+.disc{
+    width: 300px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.disc a{
+    color: #661855;
+    text-decoration: none;
+    font-weight: 1500;
+}
+.disc a:hover{
+    transition: 0.4s;
+    text-decoration: underline red;
+    color: blue;
+}
+
+.Disclaimer {
+    color: red;
+}
+

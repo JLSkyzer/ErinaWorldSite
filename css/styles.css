@@ -1,0 +1,382 @@
+*
+{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: consolas;
+}
+
+body
+{
+    background-color: #0d0d0d;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header.head{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(37, 37, 37);
+}
+
+.btn{
+    background-color: #252525;
+    border: red solid 4px;
+    border-radius: 8px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+@keyframes show {
+    0% {
+        display: none;
+    } 100% {
+        display: block;
+    }
+}
+
+@keyframes hide {
+    0% {
+        display: block;
+    } 100% {
+        display: none;
+    }
+}
+
+@keyframes out {
+    0% {
+        border: red solid 4px;
+    } 
+    100% {
+        border: blue solid 4px;
+    }
+}
+@keyframes in {
+    0% {
+        border: blue solid 4px;
+    } 
+    100% {
+        border: red solid 4px;
+    }
+}
+
+.navi
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    margin-top: 5px;
+
+
+    -moz-users-elect: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.navbox
+{
+    width: 200px;
+    overflow: hidden;
+    transition: 1s;
+    transition-duration: 1s;
+}
+
+nav
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    margin-top: 1px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    font-size: 0;
+    border-left: 2px red solid;
+    border-right: 2px blue solid;
+}
+
+nav a{
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    line-height: 50px;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+    border-bottom: 2px white solid;
+}
+
+nav a:hover
+{
+    color: rgb(0, 132, 165);
+    font-weight: bold;
+    transition: all .5s ease 0s;
+    animation: bordernav 0.5s;
+    border-bottom: 2px red solid;
+
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    margin: 6px 0;
+    transition: 0.4s;
+}
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+.change .navbox
+{
+    transition: 1s;
+    width: 500px;
+}
+
+/* =============== */
+
+h2.title{
+    padding: 3px;
+    line-height: 60px;
+    font-family: 'Alfa Slab One', cursive;
+    color:rgb(230, 230, 230)
+}
+header.head a.return{
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    font-family: 'Alfa Slab One', cursive;
+    color:rgb(230, 230, 230)
+}
+
+div.mymodel
+{
+    display: block;
+    position: relative;
+    z-index: 10;
+    margin-top: 25px;
+    background-color: #2e2e2e9e;;
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: 0 0 10px #00218b, 0 0 40px #042bac, 0 0 80px #3360f1;
+}
+
+/* Services.html */
+
+div.service-title
+{
+    height: 100px;
+    width: 200px;
+    background-color: #464545;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+div.service-title h2
+{
+    text-align: center;
+    vertical-align: center;
+    line-height: 100px;
+}
+
+/* Model.html */
+
+.body
+{
+    display: block;
+    position: absolute;
+    width: 100%;
+    min-height: 50vh;
+    margin-top: 20px;
+}
+
+.box
+{
+    margin-top: 10px;
+    position: relative;
+    border: 3px solid #3b3b3b;
+    box-shadow: 3px 3px rgb(182, 182, 182);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    padding: 4px;
+    height: 450px;
+    background-color: #292929;
+    width: 850px;
+    overflow: hidden;
+}
+
+.model-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+div.container
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    padding: 15px;
+}
+
+.contentimg
+{
+    height: 200px;
+    width: 350px;
+}
+.model-info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.model-info-text{
+    width: 400px;
+    height: 200px;
+    padding: 5px;
+    overflow: auto;
+}
+
+.dl{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 150px;
+    color: White;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #006400;
+}
+.dl:hover
+{
+    transition-duration: 0.5s;
+    transform: translateY(-10px);
+    color: black;
+    background: #01a701;
+}
+
+/* Mods Minecraft.html */
+
+.question{
+    color: #017c01;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+.answer{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    font-size: 18px;
+    color: #0075ac;
+}
+a.discord-link
+{
+    color: red;
+    text-decoration: none;
+}
+a.discord-link:hover
+{
+    color:rgb(162, 180, 0);
+}
+span.hello{
+    color: #a36200;
+}
+
+/* Développement Web */
+
+.text
+{
+    margin-left: 25px;
+}
+.compétence
+{
+    
+    color: #006400;
+    margin-left: 40px;
+    list-style-type: square;
+}
+
+.tarif
+{
+    margin-left: 25px;
+    color: #00218b;
+}
+
+
+
+/* SCROLL BAR */
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+  /* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1; 
+}
+
+  /* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(88, 88, 88); 
+}
+
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgb(24, 24, 24);
+}
+
+::-moz-selection
+{
+    color: rgb(207, 0, 0);
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+::selection{
+    color: rgb(207, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
